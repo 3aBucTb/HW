@@ -3,14 +3,12 @@
 #1. Створити програму, яка буде очікувати введення тексту від користувача і повідомляти — чи є введений текст “числом” чи “словом” (використати функцію cтрічки .isdigit() або .isalpha())
 
 month = input("What month is today?")
-if(month.isdigit()):
-    if True:
-        print(f" {month} is not a word!You need to input a word!")
+if month.isdigit():
+    print(f" {month} is not a word!You need to input a word!")
 print(f" Today is {month.title()}")
 day = input("What day is today?")
-if(day.isdigit()):
-        if False:
-            print(f" {day} is not a number!You need to input a number!")
+if day.isalpha():
+    print(f" {day} is not a number!You need to input a number!")
 
 #2. Якщо введений текст “число”, програма має також вказати чи є воно парним чи непарним.
 
